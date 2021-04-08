@@ -1,16 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ButtonCont = styled.div`
-    display: flex;
-`;
-
 const ButtonBackground = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17rem;
-    height: 5rem;
+    width: 25rem;
+    height: 10rem;
     background-color: #F86D34;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 3rem;
@@ -18,14 +14,14 @@ const ButtonBackground = styled.div`
     border-radius: 4rem;
 `;
 
-const Button = ({}) => {
-    return <ButtonCont>
-        <ButtonBackground>
-            <img src="../../favicon.ico"></img>
-            Text
-        </ButtonBackground>
-    </ButtonCont>
+// const ButtonImage = style.img`
     
+// `;
+
+const Button = ({}) => {
+    return <ButtonBackground>
+        Text
+    </ButtonBackground>
 }
 
 export default Button;

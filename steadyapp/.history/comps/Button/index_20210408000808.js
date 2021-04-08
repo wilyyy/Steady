@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ButtonCont = styled.div`
+const ButtonCont = style.div`
     display: flex;
 `;
 
@@ -17,6 +17,8 @@ const ButtonBackground = styled.div`
     color: #FFF4DD;
     border-radius: 4rem;
 `;
+
+
 
 const Button = ({}) => {
     return <ButtonCont>
