@@ -7,20 +7,20 @@ const ButtonCont = styled.div`
     position: relative;
 `;
 
-const ButtonBackground = styled.button`
+const ButtonBackground = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 17rem;
     height: 5rem;
-    background-color: ${props=>props.bgcolor};
+    background-color: #F86D34;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3rem;
+    color: #FFF4DD;
     border-radius: 4rem;
-    outline: none;
-    border: none;
 `;
 
 const ButtonImage = styled.div`
-    display: ${props=>props.imageappear};
     background-image: url(${props=>props.src});
     width: 7rem;
     height: 7rem;
@@ -30,23 +30,14 @@ const ButtonImage = styled.div`
     right: 14rem;
 `;
 
-const ButtonText = styled.p`
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 3rem;
-    color: ${props=>props.textcolor};
-`;
 
 const Button = ({
-    buttontext="Sleep",
-    src="../../vercel.svg",
-    bgcolor="#E8E0CD",
-    textcolor="#000",
-    imageappear="none"
+    buttontext="Sleep"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
-        <ButtonBackground bgcolor={bgcolor}>
-            <ButtonText textcolor={textcolor}>{buttontext}</ButtonText>
+        <ButtonImage></ButtonImage>
+        <ButtonBackground>
+            {buttontext}
         </ButtonBackground>
     </ButtonCont>
     

@@ -7,7 +7,7 @@ const ButtonCont = styled.div`
     position: relative;
 `;
 
-const ButtonBackground = styled.button`
+const ButtonBackground = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,6 @@ const ButtonBackground = styled.button`
     height: 5rem;
     background-color: ${props=>props.bgcolor};
     border-radius: 4rem;
-    outline: none;
-    border: none;
 `;
 
 const ButtonImage = styled.div`
@@ -35,6 +33,7 @@ const ButtonText = styled.p`
     font-size: 3rem;
     color: ${props=>props.textcolor};
 `;
+
 
 const Button = ({
     buttontext="Sleep",
