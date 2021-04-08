@@ -11,12 +11,13 @@ const ButtonBackground = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17rem;
-    height: 5rem;
+    width: ${props=>props.buttonwidth};
+    height: ${props=>props.buttonheight};
     background-color: ${props=>props.bgcolor};
     border-radius: 4rem;
     outline: none;
     border: none;
+    box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const ButtonImage = styled.div`
@@ -41,11 +42,13 @@ const Button = ({
     src="../../vercel.svg",
     bgcolor="#E8E0CD",
     textcolor="#000",
-    imageappear="none"
+    imageappear="none",
+    bwidth="20rem",
+    bheight="7rem"
 }) => {
     return <ButtonCont>
         <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
-        <ButtonBackground bgcolor={bgcolor}>
+        <ButtonBackground bgcolor={bgcolor} buttonwidth={bwidth} buttonheight={bheight}>
             <ButtonText textcolor={textcolor}>{buttontext}</ButtonText>
         </ButtonBackground>
     </ButtonCont>
