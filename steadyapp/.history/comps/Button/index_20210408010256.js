@@ -16,7 +16,6 @@ const ButtonBackground = styled.button`
     background-color: ${props=>props.bgcolor};
     border-radius: 4rem;
     outline: none;
-    border: none;
 `;
 
 const ButtonImage = styled.div`
