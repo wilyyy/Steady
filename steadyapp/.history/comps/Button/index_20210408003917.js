@@ -36,7 +36,7 @@ const Button = ({
     src="../../vercel.svg"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src}></ButtonImage>
+        <ButtonImage></ButtonImage>
         <ButtonBackground>
             {buttontext}
         </ButtonBackground>

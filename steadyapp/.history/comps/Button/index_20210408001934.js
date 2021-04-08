@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const ButtonCont = styled.div`
     display: flex;
     justify-content: space-evenly;
-    position: relative;
 `;
 
 const ButtonBackground = styled.div`
@@ -21,24 +20,18 @@ const ButtonBackground = styled.div`
 `;
 
 const ButtonImage = styled.div`
-    background-image: url(${props=>props.src});
-    width: 7rem;
+    width: 5rem;
     height: 7rem;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    position: absolute;
-    right: 14rem;
+    background-image: url("../../vercel.svg");
+    background-repeat: no-repeat, repeat;
 `;
 
-
-const Button = ({
-    buttontext="Sleep",
-    src="../../vercel.svg"
-}) => {
+const Button = ({}) => {
     return <ButtonCont>
-        <ButtonImage src={src}></ButtonImage>
+        <ButtonImage></ButtonImage>
         <ButtonBackground>
-            {buttontext}
+            
+            Text
         </ButtonBackground>
     </ButtonCont>
     

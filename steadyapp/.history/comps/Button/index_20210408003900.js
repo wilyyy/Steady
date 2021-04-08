@@ -32,11 +32,10 @@ const ButtonImage = styled.div`
 
 
 const Button = ({
-    buttontext="Sleep",
-    src="../../vercel.svg"
+    buttontext="Sleep"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src}></ButtonImage>
+        <ButtonImage></ButtonImage>
         <ButtonBackground>
             {buttontext}
         </ButtonBackground>
