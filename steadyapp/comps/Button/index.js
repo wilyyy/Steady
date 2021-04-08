@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const ButtonCont = styled.div`
     display: flex;
@@ -44,9 +45,11 @@ const Button = ({
     textcolor="#000",
     imageappear="none",
     bwidth="20rem",
-    bheight="7rem"
+    bheight="7rem",
+    routeTo="/title"
 }) => {
-    return <ButtonCont>
+    const router = useRouter();
+    return <ButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor} buttonwidth={bwidth} buttonheight={bheight}>
             <ButtonText textcolor={textcolor}>{buttontext}</ButtonText>
