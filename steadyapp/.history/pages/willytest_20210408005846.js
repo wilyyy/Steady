@@ -12,13 +12,11 @@ export default function Test() {
 
       <Button imageappear="flex"/>
 
-      <br></br>
-      
       <Button buttontext="Meals"
       bgcolor="#F86D34" 
       textcolor="#FFF4DD" 
       imageappear="none"
-      />
+
     </div>
   )
 }

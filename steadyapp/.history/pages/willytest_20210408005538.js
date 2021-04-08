@@ -10,15 +10,9 @@ export default function Test() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Button imageappear="flex"/>
+      <Button imageappear="flex/>
 
-      <br></br>
-      
-      <Button buttontext="Meals"
-      bgcolor="#F86D34" 
-      textcolor="#FFF4DD" 
-      imageappear="none"
-      />
+      Button
     </div>
   )
 }
