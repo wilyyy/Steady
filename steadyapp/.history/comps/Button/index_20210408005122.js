@@ -40,10 +40,10 @@ const Button = ({
     src="../../vercel.svg",
     bgcolor="#E8E0CD",
     textcolor="#000",
-    imageappear="none"
+    imageappear=none
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
+        <ButtonImage src={src}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor}>
             <ButtonText>{buttontext}</ButtonText>
         </ButtonBackground>

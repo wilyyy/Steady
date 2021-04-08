@@ -43,7 +43,7 @@ const Button = ({
     imageappear="none"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
+        <ButtonImage src={src}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor}>
             <ButtonText>{buttontext}</ButtonText>
         </ButtonBackground>

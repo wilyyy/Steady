@@ -18,7 +18,6 @@ const ButtonBackground = styled.div`
 `;
 
 const ButtonImage = styled.div`
-    display: ${props=>props.imageappear};
     background-image: url(${props=>props.src});
     width: 7rem;
     height: 7rem;
@@ -40,10 +39,9 @@ const Button = ({
     src="../../vercel.svg",
     bgcolor="#E8E0CD",
     textcolor="#000",
-    imageappear="none"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
+        <ButtonImage src={src}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor}>
             <ButtonText>{buttontext}</ButtonText>
         </ButtonBackground>

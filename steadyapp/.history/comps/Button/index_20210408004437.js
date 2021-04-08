@@ -14,11 +14,13 @@ const ButtonBackground = styled.div`
     width: 17rem;
     height: 5rem;
     background-color: ${props=>props.bgcolor};
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3rem;
+    color: #FFF4DD;
     border-radius: 4rem;
 `;
 
 const ButtonImage = styled.div`
-    display: ${props=>props.imageappear};
     background-image: url(${props=>props.src});
     width: 7rem;
     height: 7rem;
@@ -28,24 +30,15 @@ const ButtonImage = styled.div`
     right: 14rem;
 `;
 
-const ButtonText = styled.p`
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 3rem;
-    color: ${props=>props.textcolor};
-`;
-
 
 const Button = ({
     buttontext="Sleep",
-    src="../../vercel.svg",
-    bgcolor="#E8E0CD",
-    textcolor="#000",
-    imageappear="none"
+    src="../../vercel.svg"
 }) => {
     return <ButtonCont>
-        <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
+        <ButtonImage src={src}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor}>
-            <ButtonText>{buttontext}</ButtonText>
+            {buttontext}
         </ButtonBackground>
     </ButtonCont>
     
