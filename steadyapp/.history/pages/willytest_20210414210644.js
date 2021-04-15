@@ -21,7 +21,7 @@ export default function Test() {
       imageappear="none"
       />
 
-      <Subheader />
+
     </div>
   )
 }
