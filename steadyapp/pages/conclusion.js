@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 import Logo from '../comps/Logo';
+import Background from '../comps/BackgroundImage';
 import Combo from '../comps/HeadingAndParagraph';
 import Button from '../comps/Button';
+import Subheader from '../comps/Subheader'
 
 const TitleContainer = styled.div`
     .column {
@@ -21,10 +23,11 @@ export default function Title(){
             <title>Steady Homepage</title>
         </Head>
         <div className="column">
-            <Logo wide="100px" />
-            <Combo headsize="5rem" textsize="1.5rem" />
-            <Combo headsize="5rem" textsize="1.5rem" title1="Disclaimer" subtitle1="We are not professionals, only trying to help individuals become more aware of their emotions and well being!" />
-            <Button buttontext="I Understand" bgcolor= "#F86D34" textcolor="#FFF4DD" bheight="7rem" bwidth="25rem" routeTo="mainquestion" />
+            <Logo />
+            <Background />
+            <Combo title1="Take your time..." subtitle1="Making improvements doesn’t happen overnight. Start your habits now and make them last!" headsize="7rem" textsize="2.5rem" />
+            <Subheader fsize="2rem" />
+            <Button buttontext="Return" bgcolor= "#F86D34" textcolor="#FFF4DD" routeTo="/title" />
         </div>
     </TitleContainer>
 }
