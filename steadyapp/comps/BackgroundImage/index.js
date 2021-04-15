@@ -11,9 +11,10 @@ const BackgroundPicture = styled.img`
 `
 
 const Background = ({
-    wide="600px"
+    wide="600px",
+    source = "/rocks.svg"
 }) => {
-    return <BackgroundPicture w={wide} src= "/Rocks.svg" />
+    return <BackgroundPicture w={wide} src={source} />
 }
 
 export default Background;

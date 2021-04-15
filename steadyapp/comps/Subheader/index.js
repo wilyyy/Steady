@@ -7,20 +7,24 @@ const SubheaderCont = styled.div`
     align-items: center;
     justify-content: space-between;
     color: ${props=>props.textcolor};
+    z-index: 2;
 `;
 
 const SubheaderText = styled.h3`
     font-family: 'Lexend Deca', sans-serif;
+    font-size: ${props=>props.fsize};
+    text-align: center;
 `;
 
 const Subheader = ({
     textcolor = "#FFF4DD",
     quotetext = " “The best time to plant a tree was 20 years ago. The second best time is now.” ",
-    undertext = "Chinese Proverb"
+    undertext = "Chinese Proverb",
+    fsize = "1rem"
 }) => {
     return <SubheaderCont textcolor={textcolor}>
-        <SubheaderText>{quotetext}</SubheaderText>
-        <SubheaderText>{undertext}</SubheaderText>
+        <SubheaderText fsize={fsize}>{quotetext}</SubheaderText>
+        <SubheaderText fsize={fsize}>{undertext}</SubheaderText>
     </SubheaderCont>
 }
 
