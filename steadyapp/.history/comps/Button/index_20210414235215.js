@@ -30,7 +30,7 @@ const ButtonImage = styled.div`
     object-fit: cover;
     position: absolute;
     right: 16rem;
-    bottom: 0.5rem;
+    top: 2rem;
 `;
 
 const ButtonText = styled.p`

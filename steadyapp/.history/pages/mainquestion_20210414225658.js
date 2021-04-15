@@ -15,8 +15,7 @@ const MainQuestionContainer = styled.div`
     }
 
     h1{
-        font-family: 'Lexend Deca', sans-serif;
-        color: #E8E0CD;
+        
     }
 `
 
@@ -28,11 +27,9 @@ export default function Title(){
         <div className="column">
             <Logo wide="100px" />
             <h1>Tell Us About...</h1>
-            <Button imageappear="flex" src="../../sleep-disorder.png" buttontext="Sleep" bgcolor= "#F86D34" textcolor="#E8E0CD" bheight="5rem" bwidth="20rem"/>
-            <Button imageappear="flex" src="../../starvation.png" buttontext="Meals" bgcolor= "#E8E0CD" textcolor="#000" bheight="5rem" bwidth="20rem"/>
+            <Button imageappear="flex" src="../../depression.png" buttontext="Sleep" bgcolor= "#F86D34" textcolor="#E8E0CD" bheight="5rem" bwidth="20rem"/>
+            <Button imageappear="flex" src="../../depression.png" buttontext="Meals" bgcolor= "#E8E0CD" textcolor="#000" bheight="5rem" bwidth="20rem"/>
             <Button imageappear="flex" src="../../depression.png" buttontext="Emotions" bgcolor= "#E8E0CD" textcolor="#000" bheight="5rem" bwidth="20rem"/>
-            <Button imageappear="none" buttontext="Continue" bgcolor= "rgba(232, 224, 205, 0.5)" textcolor="RGBA(255,255,255,0.4)" bheight="7rem" bwidth="25rem"/>
-
         </div>
     </MainQuestionContainer>
 }
