@@ -1,14 +1,27 @@
-import Head from 'next/head';
-import styled from 'styled-components';
-import Continue from '../comps/Continue';
-
-const ContainerMain = styled.div`
-`
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import Button from '../comps/Button'
+import Subheader from '../comps/Subheader'
 
 export default function Test() {
-  return <ContainerMain>
+  return (
+    <div className={styles.container}>
       <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Continue />
-    </ContainerMain>
+
+      <Button imageappear="flex"/>
+
+      <br></br>
+      
+      <Button buttontext="Meals"
+      bgcolor="#F86D34" 
+      textcolor="#FFF4DD" 
+      imageappear="none"
+      />
+
+      <Subheader />
+    </div>
+  )
 }
