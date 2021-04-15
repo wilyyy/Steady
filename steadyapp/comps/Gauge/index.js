@@ -8,6 +8,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify content: center;
+margin: 5px;
 `;
 
 const Bar1 = styled.div`
