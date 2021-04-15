@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const MainDiv = styled.div`
     display:flex;
@@ -12,6 +13,7 @@ const MainDiv = styled.div`
     height: 125px;
     width: 315px;
     border: ${props=>props.Mainborder};
+    user-select: none;
 `;
 
 const Text = styled.h3`
@@ -28,11 +30,13 @@ const Continue = ({
     MainText = "Continue ...",
     bgColor = "rgba(232, 224, 205, 0.5)",
     borderMain = "0px solid #000000",
-    DivOpacity = "50%"
+    DivOpacity = "50%",
+    routeTo = "/title"
 }) => {
-    return <MainDiv bg={bgColor} Mainborder={borderMain} opacityDiv={DivOpacity}>
+    const router = useRouter();
+    return <MainDiv onClick={()=>router.push(routeTo)} bg={bgColor} Mainborder={borderMain} opacityDiv={DivOpacity}>
         <Text textColor={TColor} FontSize={FSize}> 
-            {MainText}   
+            {MainText}
         </Text>
     </MainDiv>  
 }
