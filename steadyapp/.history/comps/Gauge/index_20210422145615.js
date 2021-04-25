@@ -64,7 +64,7 @@ clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
 `;
 
 const FullGauge = ({
-    BarFull="#212872",
+    BarFull="#F86D34",
     BarEmpty="#E8E0CD",
     Sleep="Sleep",
     SleepDescription="You're getting too much sleep! This could lead to... Aim to get between 7-8 hours of sleep every night. A good method to start achieving this would be setting an alarm when you want to go to sleep.",
