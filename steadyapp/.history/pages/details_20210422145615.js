@@ -10,7 +10,7 @@ const ResultsContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #F86D34;
+        background: linear-gradient(#222D94, #944B22);
         height: 100vh;
     }
 `
@@ -23,7 +23,7 @@ export default function Title(){
         <div className="column">
             <Logo wide="100px" />
             <FullGauge />
-            <Continue MainText="Back" bgColor="#212872" DivOpacity="100%" routeTo="results" />
+            <Continue MainText="Back" bgColor="#F86D34" DivOpacity="100%" routeTo="results" />
         </div>
     </ResultsContainer>
 }   
