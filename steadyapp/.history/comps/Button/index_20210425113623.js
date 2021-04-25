@@ -54,7 +54,7 @@ const Button = ({
     return <ButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor} buttonwidth={bwidth} buttonheight={bheight}>
-            <ButtonText textcolor={textcolor} textsize={textsize}>{buttontext}</ButtonText>
+            <ButtonText textcolor={textcolor}>{buttontext}</ButtonText>
         </ButtonBackground>
     </ButtonCont>
     

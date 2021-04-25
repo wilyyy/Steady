@@ -11,8 +11,8 @@ const TitleContainer = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #F86D34;
-        max-height: 100vh;
+        background: #F86D34;
+        height: 100vh;
     }
 `
 

@@ -15,14 +15,14 @@ const HeaderText = styled.div`
 const Header = styled.h1`
     font-family: 'Ranchers', cursive;
     color: #FFF4DD;
-    font-size: ${props=>props.headsize};
+    font-size: ${props=>props.hsize};
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const TextSub = styled.h4`
     font-family: 'Oxygen', sans-serif;
     color: #FFF4DD;
-    font-size: ${props=>props.textsize};
+    font-size: ${props=>props.tsize};
     margin: 0px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -48,9 +48,9 @@ const Combo = ({
     return <HeaderText>
                 <Header headsize={headsize}>{title1}</Header>
                 <Group>
-                    <TextSub textsize={textsize}>{subtitle1}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle2}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle3}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle1}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle2}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle3}</TextSub>
                 </Group>
             </HeaderText>
 }

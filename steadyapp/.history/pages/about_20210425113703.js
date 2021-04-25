@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 import Logo from '../comps/Logo';
-import Background from '../comps/BackgroundImage';
 import Combo from '../comps/HeadingAndParagraph';
 import Button from '../comps/Button';
 
@@ -12,7 +11,7 @@ const TitleContainer = styled.div`
         justify-content: space-around;
         align-items: center;
         background-color: #F86D34;
-        max-height: 100vh;
+        height: 100vh;
     }
 `
 
@@ -22,9 +21,10 @@ export default function Title(){
             <title>Steady Homepage</title>
         </Head>
         <div className="column">
-            <Logo />
-            <Combo title1="Welcome to Steady" subtitle1="Ready" subtitle2="Steady" subtitle3="Go" headsize="7rem" textsize="3rem" />
-            <Button buttontext="Let's Begin" bgcolor= "#212872" textcolor="#FFF4DD" routeTo="/about" />
+            <Logo wide="100px" />
+            <Combo headsize="5rem" textsize="1.5rem" />
+            <Combo headsize="5rem" textsize="1.5rem" title1="Disclaimer" subtitle1="We are not professionals, only trying to help individuals become more aware of their emotions and well being!" />
+            <Button buttontext="I Understand" bgcolor= "#212872" textcolor="#FFF4DD" bheight="5rem" bwidth="25rem" routeTo="mainquestion" />
         </div>
     </TitleContainer>
 }
