@@ -4,6 +4,7 @@ import Logo from '../comps/Logo';
 import Background from '../comps/BackgroundImage';
 import Combo from '../comps/HeadingAndParagraph';
 import Button from '../comps/Button';
+import Subheader from '../comps/Subheader'
 
 const TitleContainer = styled.div`
     .column {
@@ -11,8 +12,8 @@ const TitleContainer = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #F86D34;
-        max-height: 100vh;
+        background: linear-gradient(#222D94, #944B22);
+        height: 100vh;
     }
 `
 
@@ -23,8 +24,10 @@ export default function Title(){
         </Head>
         <div className="column">
             <Logo />
-            <Combo title1="Welcome to Steady" subtitle1="Ready" subtitle2="Steady" subtitle3="Go" headsize="7rem" textsize="3rem" />
-            <Button buttontext="Let's Begin" bgcolor= "#212872" textcolor="#FFF4DD" routeTo="/about" />
+            <Background />
+            <Combo title1="Take your time..." subtitle1="Making improvements doesn’t happen overnight. Start your habits now and make them last!" headsize="7rem" textsize="2.5rem" />
+            <Subheader fsize="2rem" />
+            <Button buttontext="Return" bgcolor= "#F86D34" textcolor="#FFF4DD" routeTo="/title" />
         </div>
     </TitleContainer>
 }

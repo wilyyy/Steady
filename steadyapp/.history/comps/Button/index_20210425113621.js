@@ -44,7 +44,7 @@ const Button = ({
     src="../../vercel.svg",
     bgcolor="#E8E0CD",
     textcolor="#000",
-    textsize = "3rem",
+    textsize = "3rem"
     imageappear="none",
     bwidth="20rem",
     bheight="7rem",
@@ -54,7 +54,7 @@ const Button = ({
     return <ButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor} buttonwidth={bwidth} buttonheight={bheight}>
-            <ButtonText textcolor={textcolor} textsize={textsize}>{buttontext}</ButtonText>
+            <ButtonText textcolor={textcolor}>{buttontext}</ButtonText>
         </ButtonBackground>
     </ButtonCont>
     

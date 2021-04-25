@@ -46,11 +46,11 @@ const Combo = ({
 }) => {
 
     return <HeaderText>
-                <Header headsize={headsize}>{title1}</Header>
+                <Header hsize={headsize}>{title1}</Header>
                 <Group>
-                    <TextSub textsize={textsize}>{subtitle1}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle2}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle3}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle1}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle2}</TextSub>
+                    <TextSub tsize={textsize}>{subtitle3}</TextSub>
                 </Group>
             </HeaderText>
 }

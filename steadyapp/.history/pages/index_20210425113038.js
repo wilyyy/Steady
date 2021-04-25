@@ -9,9 +9,9 @@ const TitleContainer = styled.div`
     .column {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        background-color: #F86D34;
+        background: #F86D34;
         max-height: 100vh;
     }
 `
