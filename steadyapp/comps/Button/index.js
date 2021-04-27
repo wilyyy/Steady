@@ -6,6 +6,8 @@ const ButtonCont = styled.div`
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    z-index: 3;
+    cursor: pointer;
 `;
 
 const ButtonBackground = styled.button`
@@ -19,6 +21,7 @@ const ButtonBackground = styled.button`
     outline: none;
     border: none;
     box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 `;
 
 const ButtonImage = styled.div`
