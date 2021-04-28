@@ -6,7 +6,7 @@ import {HiInformationCircle} from 'react-icons/hi';
 import {MdForum} from 'react-icons/md';
 
 
-const style = {color: "#FFF6E0", width: "4em", height: "5em" };
+const style = {color: "#FFF6E0", width: "4em", height: "5em" }
 
 const NavCont = styled.div`
     width: 600px;
@@ -14,7 +14,7 @@ const NavCont = styled.div`
     background-color: #131521;
     justify-content: space-around;
     display: flex;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
 `;
 
 const NavButton = styled.div`
