@@ -17,6 +17,7 @@ const TitleContainer = styled.div`
         position: relative;
         margin: 0 auto;
         overflow: hidden;
+        padding: 20px;
     }
 
     background-color: #FA956B;
