@@ -1,10 +1,7 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Button from '../comps/Button';
-import Subheader from '../comps/Subheader';
-import NavBar from '../comps/NavBar';
-import styled from 'styled-components';
-
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import Button from '../comps/Button'
+import Subheader from '../comps/Subheader'
 
 const TitleContainer = styled.div`
     .column {
@@ -26,14 +23,11 @@ const TitleContainer = styled.div`
 
 export default function Test() {
   return (
-    <TitleContainer>
+    <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="column">
-        <NavBar />
-      </div>
-    </TitleContainer>
+    </div>
   )
 }

@@ -3,8 +3,6 @@ import styles from '../styles/Home.module.css';
 import Button from '../comps/Button';
 import Subheader from '../comps/Subheader';
 import NavBar from '../comps/NavBar';
-import styled from 'styled-components';
-
 
 const TitleContainer = styled.div`
     .column {
@@ -31,9 +29,7 @@ export default function Test() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="column">
-        <NavBar />
-      </div>
+      
     </TitleContainer>
   )
 }

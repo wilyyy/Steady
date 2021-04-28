@@ -12,7 +12,6 @@ const TitleContainer = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: radial-gradient(50% 35% at 50% 17%, #EBFF00 0%, rgba(255, 255, 255, 0) 100%), #F86D34;
         height: 100vh;
         max-width: 600px;
         position: relative;
@@ -31,9 +30,7 @@ export default function Test() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="column">
-        <NavBar />
-      </div>
+      <NavBar />
     </TitleContainer>
   )
 }

@@ -32,8 +32,9 @@ export default function Test() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="column">
-        <NavBar />
+        
       </div>
+      <NavBar />
     </TitleContainer>
   )
 }
