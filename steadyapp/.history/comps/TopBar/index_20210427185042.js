@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import {HiInformationCircle} from 'react-icons/hi';
 import {IoArrowBackCircleSharp} from 'react-icons/io5';
-import {AiFillQuestionCircle} from 'react-icons/ai';
 
 
 const style = {color: "#FFF6E0", width: "4em", height: "5em" };
@@ -26,10 +25,11 @@ const TopBarButton = styled.div`
 `;
 
 const TopBarLogo = styled.div`
-    background-image: url("../../logo_topbar.png");
+    background-image: url("../.public/logo_topbar.png");
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
+    object-fit: cover;
 `;
 
 const TopBar = ({}) => {
@@ -41,7 +41,7 @@ const TopBar = ({}) => {
             <TopBarLogo />
         </TopBarButton>
         <TopBarButton>
-            <div><AiFillQuestionCircle style={style} /></div>
+            <div><HiInformationCircle style={style} /></div>
         </TopBarButton>
     </TopBarCont>
 }

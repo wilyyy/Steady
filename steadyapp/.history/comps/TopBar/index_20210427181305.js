@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
-import {HiInformationCircle} from 'react-icons/hi';
-import {IoArrowBackCircleSharp} from 'react-icons/io5';
-import {AiFillQuestionCircle} from 'react-icons/ai';
-
+import {FaStepBackward} from 'react-icons/fa';
+import {HiQuestionMarkCircle} from 'react-icons/hi';
 
 const style = {color: "#FFF6E0", width: "4em", height: "5em" };
 
@@ -25,23 +23,13 @@ const TopBarButton = styled.div`
     height: 90px;
 `;
 
-const TopBarLogo = styled.div`
-    background-image: url("../../logo_topbar.png");
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-`;
-
 const TopBar = ({}) => {
     return <TopBarCont>
         <TopBarButton>
-            <div><IoArrowBackCircleSharp style={style} /></div>
+            <div><FaStepBackward style={style} /></div>
         </TopBarButton>
         <TopBarButton>
-            <TopBarLogo />
-        </TopBarButton>
-        <TopBarButton>
-            <div><AiFillQuestionCircle style={style} /></div>
+            <div><BsFillQuestionCircleFill style={style} /></div>
         </TopBarButton>
     </TopBarCont>
 }

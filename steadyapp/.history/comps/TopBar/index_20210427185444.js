@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import {HiInformationCircle} from 'react-icons/hi';
 import {IoArrowBackCircleSharp} from 'react-icons/io5';
-import {AiFillQuestionCircle} from 'react-icons/ai';
+import {BsFillQuestionCircleFill} from 'react-icons/bs';
 
 
 const style = {color: "#FFF6E0", width: "4em", height: "5em" };
@@ -41,7 +41,7 @@ const TopBar = ({}) => {
             <TopBarLogo />
         </TopBarButton>
         <TopBarButton>
-            <div><AiFillQuestionCircle style={style} /></div>
+            <div><BsFillQuestionCircleFill style={style} /></div>
         </TopBarButton>
     </TopBarCont>
 }

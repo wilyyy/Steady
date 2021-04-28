@@ -41,7 +41,7 @@ const TopBar = ({}) => {
             <TopBarLogo />
         </TopBarButton>
         <TopBarButton>
-            <div><AiFillQuestionCircle style={style} /></div>
+            <div><BsFillQuestionCircleFill style={style} /></div>
         </TopBarButton>
     </TopBarCont>
 }
