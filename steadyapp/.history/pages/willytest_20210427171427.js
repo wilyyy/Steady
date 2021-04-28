@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css';
 import Button from '../comps/Button';
 import Subheader from '../comps/Subheader';
 import NavBar from '../comps/NavBar';
-import TopBar from '../comps/TopBar';
 import styled from 'styled-components';
 
 
@@ -33,7 +32,6 @@ export default function Test() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="column">
-        <TopBar />
         <NavBar />
       </div>
     </TitleContainer>
