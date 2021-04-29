@@ -48,7 +48,8 @@ const BoxyButton = ({
     src="../../vercel.svg",
     text = "Meals",
     textcolor = "#FFF6E0",
-    textsize = "3rem"
+    textsize = "3rem",
+    routeTo="/"
 }) => {
     const [open, setOpen] = useState(false);
 
@@ -64,9 +65,7 @@ const BoxyButton = ({
         bgcolor={bgcolor}
         onClick = {()=>setOpen(!open)}>
             <BoxyButtonImage src={src} ></BoxyButtonImage>
-            <BoxyButtonText 
-            textcolor={textcolor}
-            textsize = {textsize}>
+            <BoxyButtonText textcolor={textcolor}>
                 {text}
             </BoxyButtonText>
         </BoxyButtonBackground>

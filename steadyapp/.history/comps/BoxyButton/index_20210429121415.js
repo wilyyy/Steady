@@ -17,7 +17,6 @@ const BoxyButtonBackground = styled.button`
     justify-content: space-evenly;
     border: none;
     border-radius: 1rem;
-    transition: background-color 1s;
 `;
 
 const BoxyButtonImage = styled.div`
@@ -33,7 +32,7 @@ const BoxyButtonImage = styled.div`
 
 const BoxyButtonText = styled.p`
     font-family: 'Lexend Deca', sans-serif;
-    font-size: ${props=>props.textsize};
+    font-size: 3rem;
     position: absolute;
     left: 8.5rem;
     color: ${props=>props.textcolor};
@@ -44,11 +43,11 @@ const BoxyButton = ({
     height = "6rem",
     // bgcolor = "#F86D34",
     // imageappear="flex",
-    onClick=()=>{},
+    showImage=()=>{},
     src="../../vercel.svg",
     text = "Meals",
     textcolor = "#FFF6E0",
-    textsize = "3rem"
+    routeTo="/"
 }) => {
     const [open, setOpen] = useState(false);
 
@@ -57,18 +56,13 @@ const BoxyButton = ({
         bgcolor = "#F86D34";
     }
 
-    return <BoxyButtonCont onClick={onClick}>
+    return <BoxyButtonCont onClick = {()=>setOpen(!open)}>
         <BoxyButtonBackground 
         width={width} 
         height={height} 
-        bgcolor={bgcolor}
-        onClick = {()=>setOpen(!open)}>
+        bgcolor={bgcolor}>
             <BoxyButtonImage src={src} ></BoxyButtonImage>
-            <BoxyButtonText 
-            textcolor={textcolor}
-            textsize = {textsize}>
-                {text}
-            </BoxyButtonText>
+            <BoxyButtonText textcolor={textcolor}>{text}</BoxyButtonText>
         </BoxyButtonBackground>
     </BoxyButtonCont>
 }

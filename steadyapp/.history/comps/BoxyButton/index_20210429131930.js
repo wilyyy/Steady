@@ -64,9 +64,7 @@ const BoxyButton = ({
         bgcolor={bgcolor}
         onClick = {()=>setOpen(!open)}>
             <BoxyButtonImage src={src} ></BoxyButtonImage>
-            <BoxyButtonText 
-            textcolor={textcolor}
-            textsize = {textsize}>
+            <BoxyButtonText textcolor={textcolor}>
                 {text}
             </BoxyButtonText>
         </BoxyButtonBackground>

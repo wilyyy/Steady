@@ -31,9 +31,7 @@ const TitleContainer = styled.div`
 export default function Title(){
     const [srcOne, setSrcOne] = useState("../../meal_icon_bw.png");
 
-    const HandleMeals = () =>{
-        setSrcOne("meal_icon.png")
-    }
+    const HandleMeals = () =>
 
     return <TitleContainer>
         <Head>
@@ -42,7 +40,7 @@ export default function Title(){
         <div className="column">
             <TopBar />
                 <h1>Tell Us About...</h1>
-                <MainQuestionMenu onMealsClick={HandleMeals} src={srcOne}/>
+                <MainQuestionMenu onMealsClick=/>
             <NavBar />
         </div>
     </TitleContainer>
