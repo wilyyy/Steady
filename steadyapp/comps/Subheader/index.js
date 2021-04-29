@@ -2,18 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SubheaderCont = styled.div`
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     color: ${props=>props.textcolor};
-    z-index: 2;
+    z-index: 1;
+    cursor: context-menu;
 `;
 
 const SubheaderText = styled.h3`
     font-family: 'Lexend Deca', sans-serif;
     font-size: ${props=>props.fsize};
     text-align: center;
+    margin: 0;
 `;
 
 const Subheader = ({
