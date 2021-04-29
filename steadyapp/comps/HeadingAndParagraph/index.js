@@ -8,10 +8,13 @@ const HeaderText = styled.div`
     display: flex;
     flex-direction: column;
     z-index: 2;
+    text-align: center;
+    align-items: center;
+    min-width: 100%;
 `;
 
 const Header = styled.h1`
-    font-family: 'Ranchers', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     color: #FFF4DD;
     font-size: ${props=>props.headsize};
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -25,32 +28,28 @@ const TextSub = styled.h4`
     margin: 0px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
+    font-weight: 300;
 `;
 
-const Group = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
-
+const Picture = styled.img`
+    width: ${props=>props.width};
+    height: auto;
+    object-fit: contain;
+`;
 
 const Combo = ({
     title1="About",
     subtitle1="Let Steady help you find out some causes and remedies to help you get back on track to a happy life ",
-    subtitle2="",
-    subtitle3="",
     headsize="3rem",
-    textsize="1rem"   
+    textsize="1rem",
+    width="200px",
+    src="/logo.png"
 }) => {
 
     return <HeaderText>
                 <Header headsize={headsize}>{title1}</Header>
-                <Group>
-                    <TextSub textsize={textsize}>{subtitle1}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle2}</TextSub>
-                    <TextSub textsize={textsize}>{subtitle3}</TextSub>
-                </Group>
+                <Picture width={width} src={src} />
+                <TextSub textsize={textsize}>{subtitle1}</TextSub>
             </HeaderText>
 }
 

@@ -20,7 +20,7 @@ const ButtonBackground = styled.button`
     border-radius: 4rem;
     outline: none;
     border: none;
-    box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 `;
 
