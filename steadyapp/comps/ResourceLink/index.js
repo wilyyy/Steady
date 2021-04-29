@@ -16,9 +16,16 @@ text-align: center;
 color: #FFF4DD;
 `
 
+const Link = styled.h3`
+font-family: 'Lexend Deca', sans-serif;
+color: #FFF4DD;
+`
+
 const ResourceHeader = styled.h1`
 font-family: 'Lexend Deca', sans-serif;
 color: #FFF4DD;
+font-size: 3rem;
+text-shadow: 2px 2px 4px #000000;
 `
 
 
@@ -29,16 +36,13 @@ const FullResource = ({
     return <Container>
         <ResourceHeader>Resources</ResourceHeader>
         <img src="logo_topbar.png"/>
-        <ResourceContainer>{ResourceLink}</ResourceContainer>
+        <Link>{ResourceLink}</Link>
         <ResourceContainer>{ResourceText}</ResourceContainer>
         <img src="logo_topbar.png"/>
-        <ResourceContainer>{ResourceLink}</ResourceContainer>
+        <Link>{ResourceLink}</Link>
         <ResourceContainer>{ResourceText}</ResourceContainer>
         <img src="logo_topbar.png"/>
-        <ResourceContainer>{ResourceLink}</ResourceContainer>
-        <ResourceContainer>{ResourceText}</ResourceContainer>
-        <img src="logo_topbar.png"/>
-        <ResourceContainer>{ResourceLink}</ResourceContainer>
+        <Link>{ResourceLink}</Link>
         <ResourceContainer>{ResourceText}</ResourceContainer>
     </Container>
     
