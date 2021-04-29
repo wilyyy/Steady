@@ -12,16 +12,22 @@ const ResourceContainer = styled.div`
 display: flex;
 flex-direction: column;
 font-family: 'Lexend Deca', sans-serif;
+text-align: center;
+color: #FFF4DD;
 `
+
+const ResourceHeader = styled.h1`
+font-family: 'Lexend Deca', sans-serif;
+color: #FFF4DD;
+`
+
 
 const FullResource = ({
     ResourceLink="https://www.google.ca",
-    ResourceText="Filler Filler Filler Filler Filler"
+    ResourceText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui purus, vulputate a est at, pellentesque venenatis sapien. Donec."
 }) => {
     return <Container>
-        <img src="logo_topbar.png"/>
-        <ResourceContainer>{ResourceLink}</ResourceContainer>
-        <ResourceContainer>{ResourceText}</ResourceContainer>
+        <ResourceHeader>Resources</ResourceHeader>
         <img src="logo_topbar.png"/>
         <ResourceContainer>{ResourceLink}</ResourceContainer>
         <ResourceContainer>{ResourceText}</ResourceContainer>
