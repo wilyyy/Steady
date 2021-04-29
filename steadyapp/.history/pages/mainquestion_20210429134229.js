@@ -32,7 +32,7 @@ export default function Title(){
     const [srcOne, setSrcOne] = useState("../../meal_icon_bw.png");
 
     const HandleMeals = () =>{
-        setSrcOne("meal_icon.png")
+        setSrcOne("meal_icon.png");
     }
 
     return <TitleContainer>

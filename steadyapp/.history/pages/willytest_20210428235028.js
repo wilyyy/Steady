@@ -14,7 +14,7 @@ const TitleContainer = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #fff;
+        background: #fff;
         height: 100vh;
         max-width: 600px;
         position: relative;
@@ -35,7 +35,7 @@ export default function Test() {
       </Head>
       <div className="column">
         <TopBar />
-        <BoxyButton src="../../meal_icon_bw.png"/>
+        <BoxyButton />
         <NavBar />
       </div>
     </TitleContainer>

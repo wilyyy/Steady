@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 import Combo from '../comps/HeadingAndParagraph';
-import BoxyButton from '../comps/BoxyButton';
-import MainQuestionMenu from '../comps/MainQuestionMenu';
+import Button from '../comps/Button';
 import TopBar from '../comps/TopBar';
 import NavBar from '../comps/NavBar';
 // import {IoIosArrowDropleft, IoIosArrowDropright} from 'react-icons/io';
@@ -11,8 +10,6 @@ import React, {useState} from 'react';
 
 const TitleContainer = styled.div`
     background-color: #616BD1;
-    font-family: 'Lexend Deca', sans-serif;
-    color: #FFF6E0;
     .column {
         display: flex;
         flex-direction: column;
@@ -26,23 +23,39 @@ const TitleContainer = styled.div`
         overflow: hidden;
         padding: 0px 20px;
     }
+    .row {
+        display: flex;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .row2 {
+        display: flex;
+        width: 80%;
+        position: relative;
+        transition: left 1s linear;
+        left: 0px;
+    }
+    .arrowleft {
+        position: relative;
+        top: 200px;
+    }
+    .arrowright {
+        position: fixed;
+        bottom: 500px;
+        left: 440px;
+    }
+    .zup {
+        z-index: 10;
+    }
 `
 
 export default function Title(){
-    const [srcOne, setSrcOne] = useState("../../meal_icon_bw.png");
-
-    const HandleMeals = () =>{
-        setSrcOne("meal_icon.png")
-    }
-
     return <TitleContainer>
         <Head>
             <title>Steady Homepage</title>
         </Head>
         <div className="column">
             <TopBar />
-                <h1>Tell Us About...</h1>
-                <MainQuestionMenu onMealsClick={HandleMeals} src={srcOne}/>
             <NavBar />
         </div>
     </TitleContainer>

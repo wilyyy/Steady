@@ -11,9 +11,8 @@ import React, {useState} from 'react';
 
 const TitleContainer = styled.div`
     background-color: #616BD1;
-    font-family: 'Lexend Deca', sans-serif;
-    color: #FFF6E0;
     .column {
+        font-family: 'Lexend Deca', sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -29,11 +28,7 @@ const TitleContainer = styled.div`
 `
 
 export default function Title(){
-    const [srcOne, setSrcOne] = useState("../../meal_icon_bw.png");
-
-    const HandleMeals = () =>{
-        setSrcOne("meal_icon.png")
-    }
+    const [srcOne, setSrcOne] = useState("")
 
     return <TitleContainer>
         <Head>
@@ -42,7 +37,7 @@ export default function Title(){
         <div className="column">
             <TopBar />
                 <h1>Tell Us About...</h1>
-                <MainQuestionMenu onMealsClick={HandleMeals} src={srcOne}/>
+                <MainQuestionMenu />
             <NavBar />
         </div>
     </TitleContainer>
