@@ -23,6 +23,9 @@ const TitleContainer = styled.div`
         overflow: hidden;
         padding: 0px 20px;
     }
+    .zup {
+        z-index: 10;
+    }
 `
 
 export default function Title(){
@@ -32,7 +35,6 @@ export default function Title(){
         </Head>
         <div className="column">
             <TopBar />
-                <BoxyButton src="../../meal_icon_bw.png"/>
             <NavBar />
         </div>
     </TitleContainer>

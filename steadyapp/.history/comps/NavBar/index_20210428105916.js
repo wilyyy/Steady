@@ -31,6 +31,14 @@ const NavBar = ({
     discussRoute = "/mainquestion",
     infoRoute = "/"
 }) => {
+    const [open, setOpen] = useState(false);
+
+    var width = 0, height = 0;
+    if(open){
+        width = 120;
+        height = 100;
+    }
+    
     const router = useRouter();
     return <NavCont>
         <NavButton onClick={()=>router.push(homeRoute)}>

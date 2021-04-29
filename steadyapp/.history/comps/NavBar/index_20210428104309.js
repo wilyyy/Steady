@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import {FaHome} from 'react-icons/fa';
 import {HiInformationCircle} from 'react-icons/hi';
 import {MdForum} from 'react-icons/md';
+import React, {useState} from 'react';
 
 
 

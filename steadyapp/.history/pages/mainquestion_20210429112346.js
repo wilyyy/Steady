@@ -32,7 +32,6 @@ export default function Title(){
         </Head>
         <div className="column">
             <TopBar />
-                <BoxyButton src="../../meal_icon_bw.png"/>
             <NavBar />
         </div>
     </TitleContainer>

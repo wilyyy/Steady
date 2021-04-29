@@ -23,6 +23,30 @@ const TitleContainer = styled.div`
         overflow: hidden;
         padding: 0px 20px;
     }
+    .row {
+        display: flex;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .row2 {
+        display: flex;
+        width: 80%;
+        position: relative;
+        transition: left 1s linear;
+        left: 0px;
+    }
+    .arrowleft {
+        position: relative;
+        top: 200px;
+    }
+    .arrowright {
+        position: fixed;
+        bottom: 500px;
+        left: 440px;
+    }
+    .zup {
+        z-index: 10;
+    }
 `
 
 export default function Title(){
@@ -32,7 +56,6 @@ export default function Title(){
         </Head>
         <div className="column">
             <TopBar />
-                <BoxyButton src="../../meal_icon_bw.png"/>
             <NavBar />
         </div>
     </TitleContainer>

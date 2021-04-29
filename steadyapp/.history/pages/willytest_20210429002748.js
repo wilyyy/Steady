@@ -35,7 +35,7 @@ export default function Test() {
       </Head>
       <div className="column">
         <TopBar />
-        <BoxyButton src="../../meal_icon_bw.png"/>
+        <BoxyButton src=""/>
         <NavBar />
       </div>
     </TitleContainer>
