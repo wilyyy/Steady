@@ -11,6 +11,7 @@ const HeaderText = styled.div`
     text-align: center;
     align-items: center;
     min-width: 100%;
+    margin: 0px 20px;
 `;
 
 const Header = styled.h1`
