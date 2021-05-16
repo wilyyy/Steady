@@ -21,7 +21,7 @@ const TitleContainer = styled.div`
         align-items: center;
         background-color: #212872;
         height: 100vh;
-        
+        max-width: 600px;
         position: relative;
         margin: 0 auto;
         overflow: hidden;

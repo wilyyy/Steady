@@ -41,7 +41,7 @@ const BoxyButtonText = styled.p`
 
 const BoxyButton = ({
     width = "20rem",
-    height = "5rem",
+    height = "4rem",
     // bgcolor = "#F86D34",
     // imageappear="flex",
     onClick=()=>{},
