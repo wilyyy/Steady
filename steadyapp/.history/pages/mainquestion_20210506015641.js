@@ -17,11 +17,11 @@ const TitleContainer = styled.div`
     .column {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: #212872;
         height: 100vh;
-        
+        max-width: 600px;
         position: relative;
         margin: 0 auto;
         overflow: hidden;
