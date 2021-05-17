@@ -9,7 +9,7 @@ import {AiFillQuestionCircle} from 'react-icons/ai';
 const style = {color: "#FFF6E0", width: "4em", height: "5em" };
 
 const TopBarCont = styled.div`
-    width: 600px;
+    width: 100%;
     height: 90px;
     background-color: #3945C6;
     justify-content: space-around;

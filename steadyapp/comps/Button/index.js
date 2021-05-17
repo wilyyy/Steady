@@ -8,6 +8,7 @@ const ButtonCont = styled.div`
     position: relative;
     z-index: 3;
     cursor: pointer;
+    margin: ${props=>props.margin};
 `;
 
 const ButtonBackground = styled.button`
@@ -51,10 +52,11 @@ const Button = ({
     imageappear="none",
     bwidth="20rem",
     bheight="7rem",
-    routeTo="/title"
+    routeTo="/title",
+    margin = "50px"
 }) => {
     const router = useRouter();
-    return <ButtonCont onClick={()=>router.push(routeTo)}>
+    return <ButtonCont onClick={()=>router.push(routeTo)} margin={margin}>
         <ButtonImage src={src} imageappear={imageappear}></ButtonImage>
         <ButtonBackground bgcolor={bgcolor} buttonwidth={bwidth} buttonheight={bheight}>
             <ButtonText textcolor={textcolor} textsize={textsize}>{buttontext}</ButtonText>
