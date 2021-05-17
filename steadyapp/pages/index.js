@@ -4,6 +4,7 @@ import Logo from '../comps/Logo';
 import Subheader from '../comps/Subheader';
 import Button from '../comps/Button';
 import Background from '../comps/BackgroundImage';
+import {useRouter, useState, useEffect} from 'react';
 
 const TitleContainer = styled.div`
     background-color: #FA956B;
@@ -24,7 +25,6 @@ const TitleContainer = styled.div`
         align-items: center;
         background: radial-gradient(50% 35% at 50% 17%, #EBFF00 0%, rgba(255, 255, 255, 0) 100%), #F86D34;
         height: 100vh;
-        max-width: 600px;
         position: relative;
         margin: 0 auto;
         overflow: hidden;
@@ -91,7 +91,11 @@ export default function Title(){
                 <Subheader quotetext="Let Steady help you find out some causes and remedies to help you get back on track to a happy life" undertext="" fsize="2rem" />
             </div>
             <div className="fade3">
-                <Button buttontext="Let's Begin" bgcolor= "#3A6FF9" textcolor="#FFF4DD" routeTo="/about" />
+                <Button 
+                    buttontext="Let's Begin" 
+                    bgcolor= "#3A6FF9" 
+                    textcolor="#FFF4DD" 
+                    routeTo="/about" />
             </div>
             <div className="waves">
                 <Background source="/waves.svg" width="1000px" bottom= "-850px" filter= "invert(10%) sepia(51%) saturate(6943%) hue-rotate(246deg) brightness(82%) contrast(106%)" />
