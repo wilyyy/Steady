@@ -10,7 +10,7 @@ import {MdForum} from 'react-icons/md';
 const style = {color: "#FFF6E0", width: "4em", height: "5em" };
 
 const NavCont = styled.div`
-    width: 100vw;
+    
     height: 90px;
     background-color: #131521;
     justify-content: space-around;
