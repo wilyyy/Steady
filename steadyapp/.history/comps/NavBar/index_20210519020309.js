@@ -7,7 +7,7 @@ import {MdForum} from 'react-icons/md';
 import {RiSurveyFill} from 'react-icons/ri';
 
 
-
+const router = useRouter();
 const style = {color: "#FFF6E0", width: "4em", height: "5em", cursor: "pointer"};
 
 const NavCont = styled.div`
@@ -27,16 +27,16 @@ const NavButton = styled.div`
     height: 90px;
 `;
 
+const ClearSessionStorage = () =>{
+    sessionStorage.clear();
+    router.push("/mainquestion");
+}
+
 const NavBar = ({
     homeRoute = "/",
     discussRoute = "/mainquestion",
     infoRoute = "/resources"
 }) => {
-    const router = useRouter();
-    const ClearSessionStorage = () =>{
-        sessionStorage.clear();
-        router.push("/mainquestion");
-    }
     return <NavCont>
         <NavButton onClick={()=>router.push(homeRoute)}>
             <div><FaHome style={style} /></div>

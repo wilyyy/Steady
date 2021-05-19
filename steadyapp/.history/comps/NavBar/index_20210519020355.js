@@ -27,6 +27,8 @@ const NavButton = styled.div`
     height: 90px;
 `;
 
+
+
 const NavBar = ({
     homeRoute = "/",
     discussRoute = "/mainquestion",
