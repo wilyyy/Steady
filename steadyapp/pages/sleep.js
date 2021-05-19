@@ -68,7 +68,6 @@ export default function Title(){
     }
 
     const HandleEnd = () => {
-        alert(result);
         sessionStorage.setItem("sleepresult", result);
         router.push("/mainquestion");
     }

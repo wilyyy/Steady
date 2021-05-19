@@ -135,7 +135,7 @@ export default function Title(){
                         </div>
                     </IconContext.Provider>    
                     <div className="column2">
-                        <Combo headsize="4rem" title1="About" subtitle1="Steady is an application designed for self-reflection and cognitive behavioural therapy" />
+                        <Combo headsize="4rem" title1="About" subtitle1="Steady is an application designed for self-reflection and cognitive behavioural therapy." />
                     </div>
                     <IconContext.Provider value={{ color: "#FFF4DD", className: "arrowright", size: "70px"}}>
                         <div className="zupright">

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 const MainDiv = styled.div`
-    display:flex;
+    display: ${props=>props.display};
     justify-content: space-around;
     flex-direction:column;
     background: ${props=>props.bg};
@@ -32,10 +32,11 @@ const Continue = ({
     bgColor = "rgba(232, 224, 205, 0.5)",
     borderMain = "0px solid #000000",
     DivOpacity = "50%",
+    display = "flex",
     onClick=()=>{}
 }) => {
     const router = useRouter();
-    return <MainDiv onClick={onClick} bg={bgColor} Mainborder={borderMain} opacityDiv={DivOpacity}>
+    return <MainDiv onClick={onClick} bg={bgColor} Mainborder={borderMain} opacityDiv={DivOpacity} display={display}>
         <Text textColor={TColor} FontSize={FSize}> 
             {MainText}
         </Text>

@@ -35,8 +35,10 @@ const PlusCardImage = styled.div`
 `;
 const PlusCardInfo = styled.div`
     display: flex;
+    flex-direction: column;
     margin: 0 20px;
     position: relative;
+    font-size: 0.9rem;
     
 `;
 const PlusCardText = styled.p`
@@ -77,7 +79,11 @@ const PlusCard = ({
     textcolor = "#FFF6E0",
     textsize = "3rem",
     textcolor2 = "#FFF6E0",
-    textsize2 = "3rem"
+    textsize2 = "3rem",
+    bodytext = "",
+    bodytext2 = "",
+    bodytext3 = "",
+    bodytext4 = ""
 }) => {
 
     return <PlusCardCont onClick={onClick}>
@@ -100,9 +106,13 @@ const PlusCard = ({
                 </PlusOrMinus>
             </PlusCardRow>
             <PlusCardInfo>
-            You’re eating the right amount of meals. Keep it up!
-Make sure to also keep your meals balanced with fruits, vegetables, wheat, dairy, and protein!
-You could even start planning out your meals to make sure you’re getting the right amount.
+                {bodytext}
+                <p/>
+                {bodytext2}
+                <p/>
+                {bodytext3}
+                <p/>
+                {bodytext4}
             </PlusCardInfo>
         </PlusCardBackground>
     </PlusCardCont>

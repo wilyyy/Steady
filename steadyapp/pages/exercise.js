@@ -9,7 +9,7 @@ import Button from '../comps/Button';
 import Continue from '../comps/Continue';
 // import {IoIosArrowDropleft, IoIosArrowDropright} from 'react-icons/io';
 // import { IconContext } from "react-icons";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
 
 const TitleContainer = styled.div`
@@ -29,7 +29,7 @@ const TitleContainer = styled.div`
         overflow: hidden;
         padding: 0px 20px;
     }
-`
+    `
 
 var result = null;
 
@@ -41,7 +41,7 @@ export default function Title(){
     const [picstate2, setPicState2] = useState(false);
     const [picstate3, setPicstate3] = useState(false);
     const [continuestate, setContinueState] = useState(false);
-
+    
     const HandleClick1 = (text) =>{
         setPicState1(true);
         setPicState2(false);
@@ -49,7 +49,7 @@ export default function Title(){
         setContinueState(true);
         result = text;
     }
-
+    
     const HandleClick2 = (text) =>{
         setPicState1(false);
         setPicState2(true);
@@ -57,7 +57,7 @@ export default function Title(){
         setContinueState(true);
         result = text;
     }
-
+    
     const HandleClick3 = (text) =>{
         setPicState1(false);
         setPicState2(false);
@@ -65,13 +65,12 @@ export default function Title(){
         setContinueState(true);
         result = text;
     }
-
+    
     const HandleEnd = () => {
-        alert(result);
         sessionStorage.setItem("exerciseresult", result);
         router.push("/mainquestion");
     }
-
+    
     return <TitleContainer>
         <Head>
             <title>Steady Homepage</title>
