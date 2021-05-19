@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiScale } from 'react-icons/hi';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -8,10 +7,6 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 text-align: flex-start;
-.image{
-    width: 60px;
-    height: 60px;
-}
 `
 
 const ResourceContainer = styled.div`
@@ -43,17 +38,18 @@ const FullResource = ({
 }) => {
     return <Container>
         <ResourceHeader>Resources</ResourceHeader>
-        <img src="meal_icon.png" className="image" />
+        <img src="sleep.png" className="image" />
         <Link href="https://www.sutterhealth.org/health/nutrition/eating-well-for-mental-health#:~:text=To%20boost%20your%20mental%20health,are%20also%20excellent%20brain%20foods.">Eating Well for Mental Health</Link>
         <br />
-        <img src="sleep.png" className="image"/>
+        <ResourceContainer>Here you can find out about good eating habits in general. What it consists of, the differents disorders, and also some solutions to them.</ResourceContainer>
+        <img src={MiniPic}/>
         <Link href="https://www.healthline.com/nutrition/17-tips-to-sleep-better">17 Tips To Sleep Better</Link>
-        <Link href="https://chear.ucsd.edu/blog/scheduled-eating-why-its-beneficial-and-how-to-start">Scheduled Eating- Why It’s Beneficial and How to Start</Link>
         <br />
-        <img src="scale.png" className="image"/>
-        <Link href="https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.htm">The Mental Health Benefits of Exercise</Link>
-        <Link href="https://www.healthlinkbc.ca/health-topics/aa131383">Healthlink BC - Get Regular Exercise for Mental Health</Link>
+        <ResourceContainer>something</ResourceContainer>
+        <img src={MiniPic}/>
+        <Link href={ResourceLink}>Click Here to read more!</Link>
         <br />
+        <ResourceContainer>{ResourceText}</ResourceContainer>
     </Container>
 }
 

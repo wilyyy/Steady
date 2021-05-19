@@ -92,6 +92,7 @@ export default function Title(){
                 <Subheader quotetext="Let Steady help you find out some causes and remedies to help you get back on track to a happy life" undertext="" fsize="2rem" />
             </div>
             <div className="fade3">
+                <Continue />
                 <Button 
                     buttontext="Let's Begin" 
                     bgcolor= "#3A6FF9" 

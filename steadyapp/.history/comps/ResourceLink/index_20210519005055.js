@@ -52,7 +52,7 @@ const FullResource = ({
         <br />
         <img src="scale.png" className="image"/>
         <Link href="https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.htm">The Mental Health Benefits of Exercise</Link>
-        <Link href="https://www.healthlinkbc.ca/health-topics/aa131383">Healthlink BC - Get Regular Exercise for Mental Health</Link>
+        <Link href="https://www.healthlinkbc.ca/health-topics/aa131383">The Mental Health Benefits of Exercise</Link>
         <br />
     </Container>
 }
