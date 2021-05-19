@@ -10,6 +10,7 @@ const MainDiv = styled.div`
     box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
     opacity: ${props=>props.opacityDiv};
+    transition: opacity 1s;
     height: 125px;
     width: 315px;
     border: ${props=>props.Mainborder};
