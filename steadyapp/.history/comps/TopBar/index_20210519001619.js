@@ -4,6 +4,7 @@ import {useRouter} from 'next/router';
 import {HiInformationCircle} from 'react-icons/hi';
 import {IoArrowBackCircleSharp} from 'react-icons/io5';
 import {AiFillQuestionCircle} from 'react-icons/ai';
+import { useHistory } from "react-router-dom";
 
 
 const style = {color: "#FFF6E0", width: "4em", height: "5em", cursor: "pointer"  };
@@ -37,9 +38,10 @@ const TopBar = ({
     homeRoute = "/"
 }) => {
     const router = useRouter();
+    let history = useHistory();
     return <TopBarCont>
         <TopBarButton>
-            <div><IoArrowBackCircleSharp onClick={()=>router.back()} style={style} /></div>
+            <div><IoArrowBackCircleSharp onClick={()=>history.goBack()} style={style} /></div>
         </TopBarButton>
         <TopBarButton>
             <TopBarLogo onClick={()=>router.push(homeRoute)}/>

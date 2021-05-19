@@ -38,7 +38,7 @@ const NavBar = ({
             <div><FaHome style={style} /></div>
         </NavButton>
         <NavButton onClick={()=>router.push(discussRoute)}>
-            <div><RiSurveyFill style={style} /></div>
+            <div><MdForum style={style} /></div>
         </NavButton>
         <NavButton onClick={()=>router.push(infoRoute)}>
             <div><HiInformationCircle style={style} /></div>

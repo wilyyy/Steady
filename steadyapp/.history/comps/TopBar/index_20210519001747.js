@@ -39,7 +39,7 @@ const TopBar = ({
     const router = useRouter();
     return <TopBarCont>
         <TopBarButton>
-            <div><IoArrowBackCircleSharp onClick={()=>router.back()} style={style} /></div>
+            <div><IoArrowBackCircleSharp onClick={() => router.back()} style={style} /></div>
         </TopBarButton>
         <TopBarButton>
             <TopBarLogo onClick={()=>router.push(homeRoute)}/>

@@ -33,13 +33,11 @@ const TopBarLogo = styled.div`
     background-repeat: no-repeat;
 `;
 
-const TopBar = ({
-    homeRoute = "/"
-}) => {
+const TopBar = ({}) => {
     const router = useRouter();
     return <TopBarCont>
         <TopBarButton>
-            <div><IoArrowBackCircleSharp onClick={()=>router.back()} style={style} /></div>
+            <div ><IoArrowBackCircleSharp style={style} /></div>
         </TopBarButton>
         <TopBarButton>
             <TopBarLogo onClick={()=>router.push(homeRoute)}/>
