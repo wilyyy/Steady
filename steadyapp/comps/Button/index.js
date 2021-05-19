@@ -62,7 +62,7 @@ const Button = ({
             <ButtonText textcolor={textcolor} textsize={textsize}>{buttontext}</ButtonText>
         </ButtonBackground>
     </ButtonCont>
-    
+
 }
 
 export default Button;
