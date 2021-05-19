@@ -33,6 +33,7 @@ const NavBar = ({
     infoRoute = "/resources"
 }) => {
     const router = useRouter();
+    const history = useHistory();
     return <NavCont>
         <NavButton onClick={()=>router.push(homeRoute)}>
             <div><FaHome style={style} /></div>
