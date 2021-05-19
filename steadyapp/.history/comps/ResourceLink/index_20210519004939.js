@@ -51,8 +51,7 @@ const FullResource = ({
         <Link href="https://chear.ucsd.edu/blog/scheduled-eating-why-its-beneficial-and-how-to-start">Scheduled Eating- Why It’s Beneficial and How to Start</Link>
         <br />
         <img src="scale.png" className="image"/>
-        <Link href="https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.htm">The Mental Health Benefits of Exercise</Link>
-        <Link href="https://www.healthlinkbc.ca/health-topics/aa131383">Healthlink BC - Get Regular Exercise for Mental Health</Link>
+        <Link href={ResourceLink}>Click Here to read more!</Link>
         <br />
     </Container>
 }
