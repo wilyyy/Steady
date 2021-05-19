@@ -14,7 +14,7 @@ const MainDiv = styled.div`
     height: 125px;
     width: 315px;
     border: ${props=>props.Mainborder};
-    user-select: none;
+    cursor: pointer;
 `;
 
 const Text = styled.h3`
@@ -28,7 +28,7 @@ const Text = styled.h3`
 const Continue = ({
     FSize = "45px",
     TColor = "#FFF",
-    MainText = "Continue ...",
+    MainText = "Continue",
     bgColor = "rgba(232, 224, 205, 0.5)",
     borderMain = "0px solid #000000",
     DivOpacity = "50%",

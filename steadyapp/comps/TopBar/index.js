@@ -6,7 +6,8 @@ import {IoArrowBackCircleSharp} from 'react-icons/io5';
 import {AiFillQuestionCircle} from 'react-icons/ai';
 
 
-const style = {color: "#FFF6E0", width: "4em", height: "5em" };
+const style = {color: "#FFF6E0", width: "4em", height: "5em", cursor: "pointer"  };
+const style2 = {color: "#3945C6", width: "4em", height: "5em" };
 
 const TopBarCont = styled.div`
     width: 100vw;
@@ -41,7 +42,7 @@ const TopBar = ({}) => {
             <TopBarLogo />
         </TopBarButton>
         <TopBarButton>
-            <div><AiFillQuestionCircle style={style} /></div>
+            <div><AiFillQuestionCircle style={style2} /></div>
         </TopBarButton>
     </TopBarCont>
 }

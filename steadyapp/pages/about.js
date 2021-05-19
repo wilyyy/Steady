@@ -43,11 +43,13 @@ const TitleContainer = styled.div`
     .arrowleft {
         position: fixed;
         top: 50%;
+        cursor: pointer;
     }
 
     .arrowright {
         position: fixed;
         top: 50%;
+        cursor: pointer;
     }
 
     .zupleft {
