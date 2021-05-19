@@ -27,21 +27,21 @@ const NavButton = styled.div`
     height: 90px;
 `;
 
+const ClearSessionStorage = () =>{
+    router.push("/mainquestion")
+}
+
 const NavBar = ({
     homeRoute = "/",
     discussRoute = "/mainquestion",
     infoRoute = "/resources"
 }) => {
     const router = useRouter();
-    const ClearSessionStorage = () =>{
-        sessionStorage.clear();
-        router.push("/mainquestion");
-    }
     return <NavCont>
         <NavButton onClick={()=>router.push(homeRoute)}>
             <div><FaHome style={style} /></div>
         </NavButton>
-        <NavButton onClick={ClearSessionStorage}>
+        <NavButton onClick={()=>router.push(discussRoute)}>
             <div><RiSurveyFill style={style} /></div>
         </NavButton>
         <NavButton onClick={()=>router.push(infoRoute)}>
