@@ -14,7 +14,7 @@ const BoxyButtonBackground = styled.button`
     background-color: ${props=>props.bgcolor};
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: ${props=>props.layout};
     border: none;
     border-radius: 1rem;
     transition: background-color 1s;
@@ -28,45 +28,48 @@ const BoxyButtonImage = styled.div`
     background-repeat: no-repeat;
     position: absolute;
     right: 13rem;
+    transition: background-image 1s;
+    display: ${props=>props.display};
     
 `;
 
 const BoxyButtonText = styled.p`
     font-family: 'Lexend Deca', sans-serif;
     font-size: ${props=>props.textsize};
-    position: absolute;
-    left: 8.5rem;
+    position: ${props=>props.position};
+    left: ${props=>props.left};
     color: ${props=>props.textcolor};
+    transition: color 1s;
 `;
 
 const BoxyButton = ({
     width = "20rem",
     height = "5rem",
     // bgcolor = "#F86D34",
-    // imageappear="flex",
+    display="inline",
     onClick=()=>{},
-    src="../../vercel.svg",
+    src="meal_icon.png",
     text = "Meals",
     textcolor = "#FFF6E0",
-    textsize = "3rem"
+    textsize = "3rem",
+    bgcolor = "gray",
+    left = "8.5rem",
+    layout = "space-evenly",
+    position = "absolute"
 }) => {
-    const [open, setOpen] = useState(false);
-
-    var bgcolor = "#A09C92";
-    if(open){
-        bgcolor = "#F86D34";
-    }
-
     return <BoxyButtonCont onClick={onClick}>
         <BoxyButtonBackground 
         width={width} 
         height={height} 
         bgcolor={bgcolor}
-        onClick = {()=>setOpen(!open)}>
-            <BoxyButtonImage src={src} ></BoxyButtonImage>
+        onClick = {onClick}
+        layout = {layout}>
+            <BoxyButtonImage src={src} display={display}></BoxyButtonImage>
             <BoxyButtonText 
             textcolor={textcolor}
-            textsize = {textsize}>
+            textsize = {textsize}
+            left = {left}
+            position = {position}>
                 {text}
             </BoxyButtonText>
         </BoxyButtonBackground>

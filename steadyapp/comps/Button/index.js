@@ -53,7 +53,7 @@ const Button = ({
     bwidth="20rem",
     bheight="7rem",
     routeTo="/title",
-    margin = "50px"
+    margin="50px"
 }) => {
     const router = useRouter();
     return <ButtonCont onClick={()=>router.push(routeTo)} margin={margin}>
