@@ -18,6 +18,7 @@ const BoxyButtonBackground = styled.button`
     border: none;
     border-radius: 1rem;
     transition: background-color 1s;
+    cursor: pointer;
 `;
 
 const BoxyButtonImage = styled.div`
@@ -30,6 +31,8 @@ const BoxyButtonImage = styled.div`
     right: 13rem;
     transition: background-image 1s;
     display: ${props=>props.display};
+    overflow: hidden;
+    border-radius: 1rem;
     
 `;
 

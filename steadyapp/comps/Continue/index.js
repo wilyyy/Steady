@@ -14,7 +14,7 @@ const MainDiv = styled.div`
     height: 125px;
     width: 315px;
     border: ${props=>props.Mainborder};
-    user-select: none;
+    cursor: pointer;
 `;
 
 const Text = styled.h3`

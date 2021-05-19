@@ -63,18 +63,22 @@ export default function Title(){
                 <h1>Tell Us About...</h1>
                 <BoxyButton
                 onClick = {HandleClick1}
+                text = "Meals"
                 bgcolor = {picstate1 ? "#F57C33" : "#E8E0CD"}
                 src = {picstate1 ? "/meal_icon.png" : "/meal_icon_bw.png"}
                 textcolor = {picstate1 ? "white" : "#131521"} />
                 <BoxyButton 
                 onClick = {HandleClick2}
+                text = "Sleep"
                 bgcolor = {picstate2 ? "#F57C33" : "#E8E0CD"}
-                src = {picstate2 ? "/meal_icon.png" : "/meal_icon_bw.png"}
+                src = {picstate2 ? "/sleep.png" : "/sleep_bw.png"}
                 textcolor = {picstate2 ? "white" : "#131521"} />
                 <BoxyButton 
+                text = "Exercise"
+                textsize = "2.5rem"
                 onClick = {HandleClick3}
                 bgcolor = {picstate3 ? "#F57C33" : "#E8E0CD"}
-                src = {picstate3 ? "/meal_icon.png" : "/meal_icon_bw.png"}
+                src = {picstate3 ? "/scale.png" : "/scale_bw.png"}
                 textcolor = {picstate3 ? "white" : "#131521"} />
                 <Button bheight="6rem" bwidth="20rem" routeTo="/"/>
             <NavBar />
