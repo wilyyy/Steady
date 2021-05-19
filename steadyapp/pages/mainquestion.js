@@ -35,7 +35,7 @@ export default function Title(){
     const [picstate2, setPicState2] = useState(false);
     const [picstate3, setPicstate3] = useState(false);
 
-    const HandleClick1 = (option) =>{
+    const HandleClick1 = () =>{
         setPicState1(true);
         setPicState2(false);
         setPicstate3(false);
