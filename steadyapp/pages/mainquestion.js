@@ -10,7 +10,7 @@ import Button from '../comps/Button';
 import {useRouter} from 'next/router';
 // import {IoIosArrowDropleft, IoIosArrowDropright} from 'react-icons/io';
 // import { IconContext } from "react-icons";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const TitleContainer = styled.div`
     background-color: #616BD1;
@@ -32,6 +32,9 @@ const TitleContainer = styled.div`
 `
 
 var state = null;
+var mealresult = null;
+var sleepresult = null;
+var exerciseresult = null;
 
 export default function Title(){
     //const [srcOne, setSrcOne] = useState("../../meal_icon_bw.png");
@@ -39,9 +42,26 @@ export default function Title(){
     const [picstate2, setPicState2] = useState(false);
     const [picstate3, setPicstate3] = useState(false);
     const [continuestate, setContinueState] = useState(false);
+    const [resultstate, setResultstate] = useState(false);
 
     const router = useRouter();
     
+    useEffect(()=>{
+        if(process.browser)
+        {
+            mealresult = sessionStorage.getItem("mealresult");
+            sleepresult = sessionStorage.getItem("sleepresult");
+            exerciseresult = sessionStorage.getItem("exerciseresult");
+
+            if(mealresult != null && sleepresult != null && exerciseresult != null)
+            {
+                setResultstate(true);
+            }
+
+        }
+    }, []);
+
+
     const HandleClick1 = () =>{
         setPicState1(true);
         setPicState2(false);
@@ -80,6 +100,10 @@ export default function Title(){
         }
     }
 
+    const RouteToResults = () =>{
+        router.push("/results");
+    }
+
     return <TitleContainer>
         <Head>
             <title>Steady Homepage</title>
@@ -108,8 +132,14 @@ export default function Title(){
                 textcolor = {picstate3 ? "white" : "#131521"} />
                 <Continue onClick = {RouteToPage} 
                 bgColor={continuestate ? "#00BF08" : "rgba(232, 224, 205, 0.5)"}
-                DivOpacity={continuestate ? "100%" : "50%"} 
+                DivOpacity={continuestate ? "100%" : "50%"}
                 />
+                <Continue 
+                display={resultstate ? "flex" : "none"}
+                MainText = "Results!" 
+                bgColor = "#00BF08"
+                DivOpacity = "100%"
+                onClick = {RouteToResults} />
             <NavBar />
         </div>
     </TitleContainer>
