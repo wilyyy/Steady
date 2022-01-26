@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
 Steady was a web application designed and developed by BCIT first year students enrolled in the Digital Design & Development program. It was made to tackle the social issue of depression and its symptoms, such as lack of eating, sleep, and exercise.
 
